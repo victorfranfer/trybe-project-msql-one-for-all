@@ -39,22 +39,6 @@ DROP DATABASE IF EXISTS SpotifyClone;
       FOREIGN KEY (`album_id`) REFERENCES SpotifyClone.albuns(album_id)
   ) engine = InnoDB;
 
-  CREATE TABLE SpotifyClone.artista_album(
-      artista_id INT,
-      album_id INT,
-      CONSTRAINT PRIMARY KEY (artista_id, album_id),
-      FOREIGN KEY (artista_id) REFERENCES SpotifyClone.artistas(artista_id),
-      FOREIGN KEY (album_id) REFERENCES SpotifyClone.albuns(album_id)
-  ) engine = InnoDB;
-
-  CREATE TABLE SpotifyClone.cancao_album(
-      cancao_id INT,
-      album_id INT,
-      CONSTRAINT PRIMARY KEY (cancao_id, album_id),
-      FOREIGN KEY (`cancao_id`) REFERENCES SpotifyClone.cancoes(cancao_id),
-      FOREIGN KEY (`album_id`) REFERENCES SpotifyClone.albuns(album_id)
-  ) engine = InnoDB;
-
   CREATE TABLE SpotifyClone.reproducoes(
       usuario_id INT,
       cancao_id INT,
@@ -125,30 +109,6 @@ DROP DATABASE IF EXISTS SpotifyClone;
     ("Samba em Paris", 267, 6),
     ("The Bard's Song", 244, 7),
     ("Feeling Good", 100, 8);
-
-  INSERT INTO SpotifyClone.artista_album (artista_id, album_id)
-  VALUES
-    (1, 1),
-    (2, 2),
-    (2, 3),
-    (3, 4),
-    (3, 5),
-    (4, 6),
-    (5, 7),
-    (6, 8);
-
-  INSERT INTO SpotifyClone.cancao_album (cancao_id, album_id)
-  VALUES
-    (1, 1),
-    (2, 1),
-    (3, 1),
-    (4, 2),
-    (5, 3),
-    (6, 4),
-    (7, 5),
-    (8, 6),
-    (9, 7),
-    (10, 8);
 
   INSERT INTO SpotifyClone.reproducoes (usuario_id, cancao_id, data_reproducao)
   VALUES
