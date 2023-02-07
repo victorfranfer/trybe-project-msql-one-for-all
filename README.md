@@ -1,4 +1,4 @@
-# :construction: README customizado em construção ! :construction:
+# MySQL One For All - Trybe Project
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
 
@@ -11,3 +11,6 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 - quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
 - quais arquivos/pastas foram desenvolvidos pela Trybe.
 -->
+This project consisted on another set of MySQL challenges. The queries were used to create a database and then manipulate it. Each file is in the root named 'desafioX.sql', being X a number from 1 to 11. 
+
+Done in August 2022.
